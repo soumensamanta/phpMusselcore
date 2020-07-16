@@ -197,11 +197,11 @@ class Loader
      *      configuration file can't be located.
      */
     public function __construct(
-        string $ConfigurationPath = '',
-        string $CachePath = '',
-        string $QuarantinePath = '',
-        string $SignaturesPath = '',
-        string $VendorPath = ''
+        string $ConfigurationPath = '/usr/share/nginx/html/lor/api/laravel/vendor/phpmussel/phpmussel/vault/config.php',
+        string $CachePath = '/usr/share/nginx/html/lor/api/laravel/storage/app/public/phpmussel-cache',
+        string $QuarantinePath = '/usr/share/nginx/html/lor/api/laravel/storage/app/public/phpmussel-quarantine',
+        string $SignaturesPath = '/usr/share/nginx/html/lor/api/laravel/storage/app/public/phpmussel-signatures',
+        string $VendorPath = '/usr/share/nginx/html/lor/api/laravel/vendor/'
     ) {
         /** Ensure minimum PHP version requirement is met. */
         if (!version_compare(PHP_VERSION, '7.2.0', '>=')) {
